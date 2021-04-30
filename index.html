@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <title>VideoPlayer</title>
+</head>
+<body>
+
+    
+
+    <div class="video">
+        <div class="video__intro">
+            <div class="video__intro-box">
+                <img src="images/mob.jpg" alt="" class="video__intro-box__img">
+            </div>
+            <h2 class="video__intro_title">Mob Video Player</h2>
+            <div class="video__intro-box">
+                <img src="images/mob-face.png" alt="" class="video__intro-box__img">
+            </div>
+        </div>
+
+        <div class="video__player">
+
+        <video src="video/video_goblin.mp4" poster="" class="video__video-play"></video>
+
+        <div class="video__player-grid">
+            <div class="video__player-grid_icon">
+                <i class="fas fa-play play-icon"></i>
+            </div>
+        </div>
+
+        <div class="video__player-panel">
+        <div class="video__panel">
+        <div class="video__bar">
+            <progress class="video__bar-progress" max="100" value =""></progress>
+        </div>
+        <div class="video__panel-box">
+        <div class="video__panel-box-invisible"></div>
+        <div class="timer">
+            <p class="h">00:</p>
+            <p class="m">00:</p>
+            <p class="s">00</p>
+        </div>
+        <button class="video__panel-btn"><i class="fas fa-compress panel-icon"></i></button>
+        </div>
+        </div>
+        <div class="video__btns">
+            <div class="video__div"><button class="video__btn pause"><i class="fas fa-pause icon icon-pause"></i></button></div>
+            <div class="video__div"><button class="video__btn restart"><i class="fas fa-redo-alt icon icon-restart"></i></button></div>
+            <div class="video__div"><button class="video__btn speed-down"><i class="fas fa-fast-backward icon icon-slower"></i></button></div>
+            <div class="video__div"><button class="video__btn speed-up"><i class="fas fa-fast-forward icon icon-faster"></i></button></div>
+            <div class="video__div volume-btn"><input type="range" class="volume" min="0" max="100">Звук</div>
+            <div class="video__div file-div"><input type="file" placeholder="" class="file"></div>
+        </div>
+    </div>
+    </div>
+        <div class="video__outro">
+            <p class="video__outro_text">Enjoy your watching!</p>
+        </div>
+    </div>
+
+    <!-- <i class="fas fa-play icon icon-play"></i> -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
